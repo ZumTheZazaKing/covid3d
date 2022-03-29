@@ -8,7 +8,7 @@ import { Suspense } from 'react';
 export function App() {
 
   const Model = () => {
-    const gltf = useLoader(GLTFLoader, "./3dmodels/coronavirus.gltf");
+    const gltf = useLoader(GLTFLoader, "./3dmodels/coronavirus/scene.gltf");
     return (
       <>
         <primitive object={gltf.scene} scale={0.4} />
