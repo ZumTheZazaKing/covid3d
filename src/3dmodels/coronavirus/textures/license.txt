@@ -1,0 +1,11 @@
+Model Information:
+* title:	Coronavirus
+* source:	https://sketchfab.com/3d-models/coronavirus-b28f63adc5f04a2aab27e1d7293eba0b
+* author:	Teliri (https://sketchfab.com/Teliri)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Coronavirus" (https://sketchfab.com/3d-models/coronavirus-b28f63adc5f04a2aab27e1d7293eba0b) by Teliri (https://sketchfab.com/Teliri) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
