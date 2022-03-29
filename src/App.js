@@ -1,40 +1,15 @@
-import { Canvas, useThree } from '@react-three/fiber';
-import CameraController from './components/CameraController';
-import Box from './3dcomponents/Box'
-import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
+import Loading from './components/Loading'
 
-export function App() {
+const CanvasContainer = lazy(() => import('./Canvas').then(module => ({default:module.CanvasContainer})))
 
-  const Model = () => {
-    const gltf = useLoader(GLTFLoader, "./3dmodels/coronavirus/scene.gltf");
-    return (
-      <>
-        <primitive object={gltf.scene} scale={0.4} />
-      </>
-    );
-  };
-
-  const Scene = () => {
-    useThree(({camera}) => {
-      camera.position.set(0, 0, 20);
-    })
-    return null
-  }
+export function App() {;
 
   return (
     <div className="App">
-      <Canvas>
-        <Suspense fallback={null}>
-          <Scene/>
-          <CameraController/>
-          <Model/>
-          <ambientLight intensity={0.5}/>
-          <directionalLight color="red" position={[10,10,0]}/>
-          <Box position={[0,0,0]}/>
-        </Suspense>
-      </Canvas>
+      <Suspense fallback={<Loading/>}>
+        <CanvasContainer/>
+      </Suspense>
     </div>
   );
 }
