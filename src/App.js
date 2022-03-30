@@ -1,14 +1,14 @@
 import { Suspense, lazy } from 'react';
 import Loading from './components/Loading'
 
-const CanvasContainer = lazy(() => import('./Canvas').then(module => ({default:module.CanvasContainer})))
+const Home = lazy(() => import('./pages/Home').then(module => ({default:module.Home})))
 
 export function App() {;
 
   return (
     <div className="App">
       <Suspense fallback={<Loading/>}>
-        <CanvasContainer/>
+        <Home/>
       </Suspense>
     </div>
   );

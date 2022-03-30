@@ -1,10 +1,10 @@
 import { Canvas, useThree } from '@react-three/fiber';
-import CameraController from './components/CameraController';
+import CameraController from '../components/CameraController';
 import { Suspense } from 'react';
-import Corona from './3dcomponents/Corona';
-import Star from './3dcomponents/Star';
+import Corona from '../3dcomponents/Corona';
+import Star from '../3dcomponents/Star';
 
-export const CanvasContainer = () => {;
+export const HomeCanvas = () => {;
 
     const Scene = () => {
       useThree(({camera}) => {
@@ -14,7 +14,7 @@ export const CanvasContainer = () => {;
     }
   
     return (
-      <div className="canvas">
+      <div className="home canvas">
         <Canvas style={{backgroundColor:'#dee0e3'}}>
           <Suspense fallback={null}>
             <Scene/>
