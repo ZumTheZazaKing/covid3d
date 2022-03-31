@@ -1,0 +1,39 @@
+{
+    "variants":{
+        "title":"Variants",
+        "content":[
+            {
+                "name":"Beta",
+                "first_detection":"May 2020",
+                "country":"South Africa",
+                "pango_lineage":"B.1.351",
+                "spread":"May spread faster than other variants",
+                "severe_effects":"Current data do not indicate more severe illness or death comparatively"
+            },
+            {
+                "name":"Alpha",
+                "first_detection":"September 2020",
+                "country":"United Kingdom",
+                "pango_lineage":"B.1.1.7",
+                "spread":"Spreads much faster than other variants",
+                "severe_effects":"May potentially cause more sickness and death"
+            },
+            {
+                "name":"Delta",
+                "first_detection":"December 2020",
+                "country":"India",
+                "pango_lineage":"B.1.617.2",
+                "spread":"Spreads much faster than other variants",
+                "severe_effects":"May cause more severe cases comparatively"
+            },
+            {
+                "name":"Gamma",
+                "first_detection":"January 2021",
+                "country":"Japan",
+                "pango_lineage":"P.1",
+                "spread":"Spreads faster than other variants",
+                "severe_effects":"Current data do not indicate more severe illness or death comparatively"
+            }
+        ]
+    }
+}
