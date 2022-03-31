@@ -8,10 +8,15 @@ title: Coronavirus
 
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 export default function Corona(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/corona.glb");
+  useFrame((state, delta) => {
+    group.current.rotation.x += 0.001;
+    group.current.rotation.y += 0.001;
+  })
   return (
     <group ref={group} {...props} dispose={null} scale={0.5}>
       <group rotation={[-Math.PI / 2, 0, 0]}>

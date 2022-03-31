@@ -11,6 +11,7 @@ export const LoadingStyles = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
         textAlign:"center",
+        backgroundColor:"#dee0e3",
     },
     text:{
         fontWeight:"bold"

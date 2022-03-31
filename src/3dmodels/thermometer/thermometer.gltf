@@ -1,0 +1,545 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1102,
+      "max": [
+        0.7919021248817444,
+        0.3507985770702362,
+        10.902939796447754
+      ],
+      "min": [
+        -0.7919021248817444,
+        -0.3507985472679138,
+        0.4176241457462311
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 13224,
+      "componentType": 5126,
+      "count": 1102,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1102,
+      "max": [
+        0.9944720268249512,
+        0.9908278584480286
+      ],
+      "min": [
+        0.0055305855348706245,
+        0.006153726484626532
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 8816,
+      "componentType": 5126,
+      "count": 1102,
+      "max": [
+        0.9944720268249512,
+        0.9908278584480286
+      ],
+      "min": [
+        0.0055305855348706245,
+        0.006153726484626532
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4074,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 26448,
+      "componentType": 5126,
+      "count": 104,
+      "max": [
+        0.1418999284505844,
+        0.1418999284505844,
+        0.4176241457462311
+      ],
+      "min": [
+        -0.1418999284505844,
+        -0.1418999433517456,
+        -0.141899973154068
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27696,
+      "componentType": 5126,
+      "count": 104,
+      "max": [
+        0.999755859375,
+        0.9999891519546509,
+        -0.0046669417060911655
+      ],
+      "min": [
+        -0.999755859375,
+        -0.9999892115592957,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17632,
+      "componentType": 5126,
+      "count": 104,
+      "max": [
+        0.23186948895454407,
+        0.24088671803474426
+      ],
+      "min": [
+        0.11210301518440247,
+        0.1666957139968872
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 16296,
+      "componentType": 5125,
+      "count": 432,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 28944,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.31059420108795166,
+        0.20911256968975067,
+        7.8462700843811035
+      ],
+      "min": [
+        -0.31059420108795166,
+        0.20911245048046112,
+        6.483796119689941
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29136,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.0,
+        1.0,
+        -7.895889098108455e-08
+      ],
+      "min": [
+        0.0,
+        1.0,
+        -7.895889098108455e-08
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18464,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18024,
+      "componentType": 5125,
+      "count": 42,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29328,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.3105941712856293,
+        0.18288181722164154,
+        7.846269607543945
+      ],
+      "min": [
+        -0.3105941712856293,
+        0.182881698012352,
+        6.483795642852783
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29520,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        8.544801964518317e-14,
+        1.0,
+        -8.45588132847297e-08
+      ],
+      "min": [
+        8.544801964518317e-14,
+        1.0,
+        -8.45588132847297e-08
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18592,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        1.0000001192092896,
+        1.000000238418579
+      ],
+      "min": [
+        1.1920928955078125e-07,
+        0.0032938122749328613
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18192,
+      "componentType": 5125,
+      "count": 42,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "BlackCube (https://sketchfab.com/blackcube4)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/fever-thermometer-acb2c16f9224404d996ab44c26d58176",
+      "title": "Fever thermometer"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 18360,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18720,
+      "byteOffset": 18360,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 29712,
+      "byteOffset": 37080,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 66792,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_transmission"
+  ],
+  "images": [
+    {
+      "uri": "textures/Main_baseColor.png"
+    },
+    {
+      "uri": "textures/Main_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Display_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Main",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.538224,
+          0.538224,
+          0.538224,
+          1.0
+        ],
+        "roughnessFactor": 0.15026110967781553
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1.0
+        }
+      },
+      "name": "Glas",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          0.25
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.09599063199345272
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Display",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "fever thermometer_Main_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "fever thermometer_Tip_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "indices": 8,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "fever thermometer_Glas_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9,
+            "TEXCOORD_0": 11
+          },
+          "indices": 12,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "fever thermometer_Display_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 14,
+            "POSITION": 13,
+            "TEXCOORD_0": 15
+          },
+          "indices": 16,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.053865909576416,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.3400523953585406e-16,
+        -1.053865909576416,
+        0.0,
+        0.0,
+        1.053865909576416,
+        2.3400523953585406e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Fieberthermometer.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "matrix": [
+        1.1720950603485107,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.1720950603485096,
+        5.123390229186127e-08,
+        0.0,
+        0.0,
+        -5.123390229186127e-08,
+        1.1720950603485096,
+        0.0,
+        2.4959444999694824e-07,
+        5.709007382392883e-07,
+        -6.550529956817627,
+        1.0
+      ],
+      "name": "fever thermometer"
+    },
+    {
+      "mesh": 0,
+      "name": "fever thermometer_Main_0"
+    },
+    {
+      "mesh": 1,
+      "name": "fever thermometer_Tip_0"
+    },
+    {
+      "mesh": 2,
+      "name": "fever thermometer_Glas_0"
+    },
+    {
+      "mesh": 3,
+      "name": "fever thermometer_Display_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

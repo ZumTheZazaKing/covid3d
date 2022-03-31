@@ -1,6 +1,5 @@
 import { useFrame } from "@react-three/fiber"
 import { useRef, useEffect, useState } from "react";
-import * as THREE from "three";
 
 export default function OptionParticle1(props){
 
@@ -19,10 +18,13 @@ export default function OptionParticle1(props){
         <mesh 
             {...props} 
             ref={ref} 
-            onClick={() => console.log("Option1")}
             position={[40,0,0]}
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)}
+            onClick={() => {
+              window.appHistory.push("/#/syptoms")
+              setTimeout((() => {window.location.reload()}), 100)
+            }}
         >
             <icosahedronGeometry args={[5]}/>
             <meshStandardMaterial color="red"/>

@@ -9,6 +9,7 @@ import en from './translations/en.json';
 
 const Home = lazy(() => import('./pages/Home').then(module => ({default:module.Home})))
 const Variants = lazy(() => import('./pages/Variants').then(module => ({default:module.Variants})))
+const Syptoms = lazy(() => import('./pages/Syptoms').then(module => ({default:module.Syptoms})))
 
 const customHistory = createBrowserHistory({});
 window.appHistory = customHistory;
@@ -30,6 +31,7 @@ export function App() {
 
               <Route path="/" element={<Home/>} />
               <Route path="/variants" element={<Variants/>} />
+              <Route path="/syptoms" element={<Syptoms/>} />
 
            </Routes>
           </Context.Provider>

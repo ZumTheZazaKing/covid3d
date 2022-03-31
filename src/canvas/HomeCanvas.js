@@ -4,7 +4,8 @@ import { Suspense } from 'react';
 import Corona from '../3dcomponents/Corona';
 import Star from '../3dcomponents/Star';
 import OptionParticle1 from '../3dcomponents/OptionParticle1';
-import OptionParticle2 from '../3dcomponents/OptionParticle2';
+import VariantsButton from '../3dcomponents/HomeComponents/VariantsButton';
+import SyptomsButton from '../3dcomponents/HomeComponents/SyptomsButton';
 
 export const HomeCanvas = () => {;
 
@@ -21,8 +22,8 @@ export const HomeCanvas = () => {;
           <Suspense fallback={null}>
             <Scene/>
             <Corona/>
-            <OptionParticle1/>
-            <OptionParticle2/>
+            <SyptomsButton/>
+            <VariantsButton/>
             {Array(400).fill().map(() => <Star/>)}
             <CameraController/>
             <ambientLight intensity={0.5}/>
