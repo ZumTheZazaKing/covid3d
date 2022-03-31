@@ -1,5 +1,6 @@
 import { Suspense, lazy, useState } from 'react';
-import Loading from './components/Loading'
+import Loading from './components/Loading';
+import MobileWarn from './components/MobileWarn';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import { Context } from './Context';
@@ -18,6 +19,7 @@ export function App() {
   const [currentLanguage, setCurrentLanguage] = useState(en);
 
   return (
+    window.innerWidth < 1000 || window.innerHeight < 600 ? <MobileWarn /> :
     <HashRouter history={customHistory}>
       <div className="App">
         <Suspense fallback={<Loading/>}>

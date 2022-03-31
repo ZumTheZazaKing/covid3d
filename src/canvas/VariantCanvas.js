@@ -5,6 +5,7 @@ import BetaCorona from '../3dcomponents/CoronaVariants/BetaCorona';
 import AlphaCorona from '../3dcomponents/CoronaVariants/AlphaCorona';
 import DeltaCorona from '../3dcomponents/CoronaVariants/DeltaCorona';
 import GammaCorona from '../3dcomponents/CoronaVariants/GammaCorona';
+import OmicronCorona from '../3dcomponents/CoronaVariants/OmicronCorona';
 
 export const VariantCanvas = (props) => {
 
@@ -21,7 +22,8 @@ export const VariantCanvas = (props) => {
         <BetaCorona/>,
         <AlphaCorona/>,
         <DeltaCorona/>,
-        <GammaCorona/>
+        <GammaCorona/>,
+        <OmicronCorona/>
     ]
 
     return (

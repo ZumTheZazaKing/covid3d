@@ -10,6 +10,7 @@ export const LoadingStyles = StyleSheet.create({
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
+        textAlign:"center",
     },
     text:{
         fontWeight:"bold"

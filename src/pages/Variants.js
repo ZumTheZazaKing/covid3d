@@ -36,11 +36,11 @@ export const Variants = () => {
                     <div className={css(VariantStyles.mainContent)}>
                         <div className={css(VariantStyles.contentInfo)}>
                             <h2>{currentLanguage.variants.content[variantIndex].name}</h2><br/>
-                            <p>First Detection: <b>{currentLanguage.variants.content[variantIndex].first_detection}</b></p><br/>
-                            <p>Founded in: <b>{currentLanguage.variants.content[variantIndex].country}</b></p><br/>
-                            <p>Pango Lineage: <b>{currentLanguage.variants.content[variantIndex].pango_lineage}</b></p><br/>
-                            <p>Spread: <b>{currentLanguage.variants.content[variantIndex].spread}</b></p><br/>
-                            <p>Severe Effects: <b>{currentLanguage.variants.content[variantIndex].severe_effects}</b></p>
+                            <p><b>First Detection:</b> {currentLanguage.variants.content[variantIndex].first_detection}</p><br/>
+                            <p><b>Founded in:</b> {currentLanguage.variants.content[variantIndex].country}</p><br/>
+                            <p><b>Pango Lineage:</b> {currentLanguage.variants.content[variantIndex].pango_lineage}</p><br/>
+                            <p><b>Spread:</b> {currentLanguage.variants.content[variantIndex].spread}</p><br/>
+                            <p><b>Severe Effects:</b> {currentLanguage.variants.content[variantIndex].severe_effects}</p>
                         </div>
                         <div className={css(VariantStyles.contentImage)}>
                             <VariantCanvas variantIndex={variantIndex}/>

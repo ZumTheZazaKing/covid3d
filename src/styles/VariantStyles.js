@@ -23,7 +23,8 @@ export const VariantStyles = StyleSheet.create({
         border:"none",
         backgroundColor:"transparent",
         color:"white",
-        fontSize:"16px"
+        fontSize:"16px",
+        cursor:"pointer"
     },
     header:{},
     content:{
@@ -51,7 +52,8 @@ export const VariantStyles = StyleSheet.create({
     contentInfo:{
         flex:2,
         padding:"20px",
-        lineHeight:1.5
+        lineHeight:1.5,
+        fontSize:"14px"
     },
     contentImage:{
         flex:1,

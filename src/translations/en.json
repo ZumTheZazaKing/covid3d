@@ -33,6 +33,14 @@
                 "pango_lineage":"P.1",
                 "spread":"Spreads faster than other variants",
                 "severe_effects":"Current data do not indicate more severe illness or death comparatively"
+            },
+            {
+                "name":"Omicron",
+                "first_detection":"December 2021",
+                "country":"United States",
+                "pango_lineage":"B.1.1.529",
+                "spread":"The Omicron variant spreads more easily than earlier variants of the virus that cause COVID-19, including the Delta variant.",
+                "severe_effects":"Omicron infection generally causes less severe disease than infection with prior variants."
             }
         ]
     }

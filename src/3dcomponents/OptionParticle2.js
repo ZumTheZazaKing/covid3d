@@ -13,7 +13,6 @@ export default function OptionParticle2(props){
 
   useFrame((state, delta) => {
     ref.current.rotation.x += 0.01;
-    ref.current.rotateOnAxis(new THREE.Vector3(1, 0, 0), 0.01);
   })
 
     return (

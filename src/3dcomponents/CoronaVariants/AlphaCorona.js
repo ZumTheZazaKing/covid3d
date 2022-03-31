@@ -8,9 +8,14 @@ title: Coronavirus (COVID-19)
 
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 export default function AlphaCorona(props) {
   const group = useRef();
+  useFrame((state, delta) => {
+    group.current.rotation.z += 0.01;
+    group.current.rotation.x += 0.01;
+  })
   const { nodes, materials } = useGLTF("/alpha.glb");
   return (
     <group ref={group} {...props} dispose={null} scale={0.6}>
