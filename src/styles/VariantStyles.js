@@ -15,16 +15,18 @@ export const VariantStyles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         backgroundColor:"rgba(0,0,0,0.7)",
+        borderRadius:"10px",
         color:"white"
     },
     backButton:{
-        float:"left"
+        float:"left",
+        border:"none",
+        backgroundColor:"transparent",
+        color:"white",
+        fontSize:"16px"
     },
-    header:{
-        border:"1px solid #000",
-    },
+    header:{},
     content:{
-        border:"1px solid #000",
         width:"100%",
         flex:1,
         display: 'flex',
@@ -39,7 +41,7 @@ export const VariantStyles = StyleSheet.create({
         cursor:"pointer",
         border:"none",
         outline:"none",
-        backgroundColor:"transparent",
+        backgroundColor:"rgba(0,0,0,0.5)",
         color:"white",
         fontSize:"100%",
         ":hover":{
@@ -48,7 +50,7 @@ export const VariantStyles = StyleSheet.create({
     },
     contentInfo:{
         flex:2,
-        padding:"10px",
+        padding:"20px",
         lineHeight:1.5
     },
     contentImage:{

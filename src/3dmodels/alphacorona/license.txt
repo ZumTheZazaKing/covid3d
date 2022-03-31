@@ -1,11 +1,11 @@
 Model Information:
-* title:	Virus 5 C Animated
-* source:	https://sketchfab.com/3d-models/virus-5-c-animated-e9e3441d19ac47a79ec6cc97e6cacf3e
-* author:	Smack (https://sketchfab.com/plaghuurtne)
+* title:	Coronavirus (COVID-19)
+* source:	https://sketchfab.com/3d-models/coronavirus-covid-19-e503a898c579454ebe103fc02ea2683c
+* author:	anurag.anand (https://sketchfab.com/anurag.anand)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Virus 5 C Animated" (https://sketchfab.com/3d-models/virus-5-c-animated-e9e3441d19ac47a79ec6cc97e6cacf3e) by Smack (https://sketchfab.com/plaghuurtne) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Coronavirus (COVID-19)" (https://sketchfab.com/3d-models/coronavirus-covid-19-e503a898c579454ebe103fc02ea2683c) by anurag.anand (https://sketchfab.com/anurag.anand) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

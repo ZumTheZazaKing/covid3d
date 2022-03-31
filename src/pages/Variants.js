@@ -43,7 +43,7 @@ export const Variants = () => {
                             <p>Severe Effects: <b>{currentLanguage.variants.content[variantIndex].severe_effects}</b></p>
                         </div>
                         <div className={css(VariantStyles.contentImage)}>
-                            <VariantCanvas/>
+                            <VariantCanvas variantIndex={variantIndex}/>
                         </div>
                     </div>
                     <button onClick={goToNextVariant} className={css(VariantStyles.button)}>Next</button>

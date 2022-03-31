@@ -1,0 +1,11 @@
+Model Information:
+* title:	Coronavirus
+* source:	https://sketchfab.com/3d-models/coronavirus-06b0a1d2e64a48a5979b3803d69675e3
+* author:	emvision (https://sketchfab.com/emvision)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Coronavirus" (https://sketchfab.com/3d-models/coronavirus-06b0a1d2e64a48a5979b3803d69675e3) by emvision (https://sketchfab.com/emvision) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
