@@ -6,14 +6,54 @@ source: https://sketchfab.com/3d-models/fever-thermometer-acb2c16f9224404d996ab4
 title: Fever thermometer
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import React, { useRef, useEffect, useState } from "react";
+import { useGLTF, Html } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+import { useSpring, animated, config } from "@react-spring/three";
 
 export default function SyptomsButton(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/thermometer.glb");
+
+  const [hovered, setHovered] = useState(false)
+
+  useEffect(() => {
+    document.body.style.cursor = hovered ? 'pointer' : 'auto'
+  }, [hovered])
+  const { scale } = useSpring({
+    scale: hovered ? 200 : 150,
+    config: config.wobbly
+  });
+
+  useFrame(({clock}) => {
+    group.current.rotation.y = Math.sin(clock.getElapsedTime())
+  })
+
   return (
-    <group ref={group} {...props} dispose={null} position={[80,0,0]}>
+    <animated.group ref={group} {...props} dispose={null} 
+      position={[80,0,0]} 
+      scale={scale}
+      onPointerOver={() => setHovered(true)}
+      onPointerOut={() => setHovered(false)}
+      onClick={() => {
+        window.appHistory.push("/#/syptoms")
+        setTimeout((() => {window.location.reload()}), 100)
+      }}
+    >
+      <Html scaleFactor={10}
+        style={{
+          pointerEvents: "none", 
+          display: hovered ? "block" : "none",
+          color:"white",
+          padding:"10px",
+          backgroundColor:"rgba(0,0,0,0.5)",
+          borderRadius:"5px"
+        }}
+      >
+        <div className="content">
+          Syptoms
+        </div>
+      </Html>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.05}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <group position={[0, 0, -6.55]} scale={1.17}>
@@ -44,7 +84,7 @@ export default function SyptomsButton(props) {
           </group>
         </group>
       </group>
-    </group>
+    </animated.group>
   );
 }
 

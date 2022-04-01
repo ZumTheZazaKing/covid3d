@@ -23,7 +23,7 @@ export const SyptomsStyles = StyleSheet.create({
     container:{
         padding:"20px",
         width:"70%",
-        height:"300px",
+        height:"auto",
         marginLeft:"auto",
         marginRight:"auto",
         lineHeight:"1.5",
@@ -32,6 +32,8 @@ export const SyptomsStyles = StyleSheet.create({
         backgroundColor:"rgba(0,0,0,0.7)",
         color:"white",
         display: 'flex',
+        alignItems: 'center',
+        
     },
     syptomsContext:{
         flex:2,
@@ -39,6 +41,7 @@ export const SyptomsStyles = StyleSheet.create({
     },
     syptomsImage:{
         flex:1,
+        height:"100%",
     },
     mostHeader:{color:"green"},
     lessHeader:{color:"orange"},

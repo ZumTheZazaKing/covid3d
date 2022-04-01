@@ -1,9 +1,8 @@
 import { Canvas, useThree } from '@react-three/fiber';
 import CameraController from '../components/CameraController';
 import { Suspense } from 'react';
-import Corona from '../3dcomponents/Corona';
+import Corona from '../3dcomponents/HomeComponents/Corona';
 import Star from '../3dcomponents/Star';
-import OptionParticle1 from '../3dcomponents/OptionParticle1';
 import VariantsButton from '../3dcomponents/HomeComponents/VariantsButton';
 import SyptomsButton from '../3dcomponents/HomeComponents/SyptomsButton';
 

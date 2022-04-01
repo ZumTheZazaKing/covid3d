@@ -1,5 +1,4 @@
 import { Canvas, useThree } from '@react-three/fiber';
-import CameraController from '../components/CameraController';
 import { Suspense } from 'react';
 import BetaCorona from '../3dcomponents/CoronaVariants/BetaCorona';
 import AlphaCorona from '../3dcomponents/CoronaVariants/AlphaCorona';
@@ -30,7 +29,6 @@ export const VariantCanvas = (props) => {
         <Canvas style={{backgroundColor:"rgba(0,0,0,0.3)"}}>
             <Suspense fallback={null}>
                 <Scene/>
-                <CameraController/>
                 <ambientLight intensity={1}/>
                 <directionalLight position={[0, 0, 20]}/>
                 {variantModels[variantIndex]}
