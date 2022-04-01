@@ -31,7 +31,8 @@ export default function SyptomsButton(props) {
 
   return (
     <animated.group ref={group} {...props} dispose={null} 
-      position={[80,0,0]} 
+      position={[80,0,0]}
+      rotation={[200,0,0]}
       scale={scale}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
