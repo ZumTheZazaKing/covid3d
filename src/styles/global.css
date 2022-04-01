@@ -6,6 +6,10 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+body{
+    background-color: #dee0e3;
+}
+
 .App, .canvas{
     position: fixed;
     top: 0;

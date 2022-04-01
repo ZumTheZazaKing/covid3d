@@ -17,6 +17,7 @@
     "react-scripts": "5.0.0",
     "react-tooltip": "^4.2.21",
     "three": "^0.139.0",
+    "troika-three-text": "^0.46.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

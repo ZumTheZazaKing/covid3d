@@ -6,7 +6,7 @@ import Corona from '../3dcomponents/HomeComponents/Corona';
 import VariantsHolder from '../3dcomponents/HomeComponents/VariantsHolder';
 import SyptomsHolder from '../3dcomponents/HomeComponents/SyptomsHolder';
 import StoryHolder from '../3dcomponents/HomeComponents/StoryHolder';
-import Star from '../3dcomponents/Star';
+import Star from '../3dcomponents/HomeComponents/Star';
 
 export const HomeCanvas = () => {;
 
@@ -18,7 +18,7 @@ export const HomeCanvas = () => {;
     }
   
     return (
-      <div className="home canvas">
+      <div className={`home canvas`}>
         <Canvas style={{backgroundColor:'#dee0e3'}}>
           <Suspense fallback={
             <Html

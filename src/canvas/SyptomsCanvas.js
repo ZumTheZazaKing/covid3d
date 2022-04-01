@@ -1,5 +1,6 @@
 import { Canvas, useThree } from '@react-three/fiber';
 import { Suspense } from 'react';
+import { Html } from '@react-three/drei';
 import Checkmark from '../3dcomponents/SyptomsComponents/Checkmark';
 import Questionmark from '../3dcomponents/SyptomsComponents/Questionmark';
 import Exclamationmark from '../3dcomponents/SyptomsComponents/Exclamationmark';
@@ -23,7 +24,14 @@ export const SyptomsCanvas = (props) => {
 
     return (
         <Canvas>
-            <Suspense fallback={null}>
+            <Suspense fallback={
+                <Html
+                    center
+                    prepend
+                >
+                    <h2>LOADING...</h2>
+                </Html>
+            }>
                 <Scene/>
                 {Models[level]}
                 <ambientLight intensity={0.5}/>

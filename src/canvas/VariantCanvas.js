@@ -1,5 +1,6 @@
 import { Canvas, useThree } from '@react-three/fiber';
 import { Suspense } from 'react';
+import { Html } from '@react-three/drei';
 import BetaCorona from '../3dcomponents/CoronaVariants/BetaCorona';
 import AlphaCorona from '../3dcomponents/CoronaVariants/AlphaCorona';
 import DeltaCorona from '../3dcomponents/CoronaVariants/DeltaCorona';
@@ -27,10 +28,17 @@ export const VariantCanvas = (props) => {
 
     return (
         <Canvas style={{backgroundColor:"rgba(0,0,0,0.3)"}}>
-            <Suspense fallback={null}>
+            <Suspense fallback={
+                <Html
+                    center
+                    prepend
+                >
+                    <h2>LOADING...</h2>
+                </Html>
+            }>
                 <Scene/>
                 <ambientLight intensity={1}/>
-                <directionalLight position={[0, 0, 20]}/>
+                <directionalLight intensity={0.5} position={[0, 40, 40]}/>
                 {variantModels[variantIndex]}
             </Suspense>
         </Canvas>
