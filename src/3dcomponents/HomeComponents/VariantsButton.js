@@ -11,7 +11,7 @@ import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useSpring, animated, config } from "@react-spring/three";
 
-export default function Variants(props) {
+export default function VariantsButton(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/variantsButton.glb");
 
@@ -26,11 +26,13 @@ export default function Variants(props) {
   });
 
   useFrame(({clock}) => {
-    group.current.rotation.y = Math.sin(clock.getElapsedTime())
+    group.current.rotation.z = Math.sin(clock.getElapsedTime())
   })
 
   return (
-    <animated.group ref={group} {...props} dispose={null} position={[-60,0,0]} 
+    <animated.group ref={group} {...props} dispose={null} 
+      position={[-50,0,0]} 
+      rotation={[-200,0,0]}
       scale={scale}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}

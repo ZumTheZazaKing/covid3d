@@ -46,6 +46,9 @@ export const Syptoms = () => {
                     - Difficulty breathing or shortness of breath<br/>
                     - Loss of speech or mobility, or confusion<br/>
                     - Chest pain<br/>
+                    <br/>
+                    Seek immediate medical attention if you have serious symptoms.
+                    Always call before visiting your doctor or health facility.
                </div>
                 <div className={css(SyptomsStyles.syptomsImage)}>
                     <SyptomsCanvas level={2}/>

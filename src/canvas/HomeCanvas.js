@@ -2,15 +2,15 @@ import { Canvas, useThree } from '@react-three/fiber';
 import CameraController from '../components/CameraController';
 import { Suspense } from 'react';
 import Corona from '../3dcomponents/HomeComponents/Corona';
+import VariantsHolder from '../3dcomponents/HomeComponents/VariantsHolder';
+import SyptomsHolder from '../3dcomponents/HomeComponents/SyptomsHolder';
 import Star from '../3dcomponents/Star';
-import VariantsButton from '../3dcomponents/HomeComponents/VariantsButton';
-import SyptomsButton from '../3dcomponents/HomeComponents/SyptomsButton';
 
 export const HomeCanvas = () => {;
 
     const Scene = () => {
       useThree(({camera}) => {
-        camera.position.set(0, 0, 120);
+        camera.position.set(0, 100, 120);
       })
       return null
     }
@@ -21,8 +21,8 @@ export const HomeCanvas = () => {;
           <Suspense fallback={null}>
             <Scene/>
             <Corona/>
-            <SyptomsButton/>
-            <VariantsButton/>
+            <VariantsHolder/>
+            <SyptomsHolder/>
             {Array(400).fill().map(() => <Star/>)}
             <CameraController/>
             <ambientLight intensity={0.5}/>

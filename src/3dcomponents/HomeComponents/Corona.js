@@ -14,8 +14,7 @@ export default function Corona(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/corona.glb");
   useFrame((state, delta) => {
-    group.current.rotation.x += 0.001;
-    group.current.rotation.y += 0.001;
+    group.current.rotation.y += 0.004;
   })
   return (
     <group ref={group} {...props} dispose={null} scale={0.5}>

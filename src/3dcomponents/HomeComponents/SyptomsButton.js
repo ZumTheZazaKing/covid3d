@@ -21,7 +21,7 @@ export default function SyptomsButton(props) {
     document.body.style.cursor = hovered ? 'pointer' : 'auto'
   }, [hovered])
   const { scale } = useSpring({
-    scale: hovered ? 200 : 150,
+    scale: hovered ? 300 : 200,
     config: config.wobbly
   });
 
@@ -31,7 +31,7 @@ export default function SyptomsButton(props) {
 
   return (
     <animated.group ref={group} {...props} dispose={null} 
-      position={[80,0,0]}
+      position={[100,0,0]}
       rotation={[200,0,0]}
       scale={scale}
       onPointerOver={() => setHovered(true)}
