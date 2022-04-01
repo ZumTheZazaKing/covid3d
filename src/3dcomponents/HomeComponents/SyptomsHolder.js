@@ -7,7 +7,7 @@ export default function SyptomsHolder(){
     const ref = useRef();
 
     useFrame(() => {
-        ref.current.rotation.y += 0.001;
+        ref.current.rotation.y += 0.002;
     })
 
     return(
