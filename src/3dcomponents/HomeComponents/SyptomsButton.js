@@ -37,7 +37,7 @@ export default function SyptomsButton(props) {
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
       onClick={() => {
-        window.appHistory.push("/#/syptoms")
+        window.appHistory.push("/#/symptoms")
         setTimeout((() => {window.location.reload()}), 100)
       }}
     >

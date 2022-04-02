@@ -10,8 +10,8 @@ export const Home = () => {
         <div className={css(HomeStyles.wrapper)}>
             <Suspense fallback={<Loading />}>
                 <h1 className={css(HomeStyles.title)}>A Close Look At COVID-19</h1>
-                    <p className={css(HomeStyles.tip)}>Click & drag to rotate</p>
-                    <p className={css(HomeStyles.tip)}>Scroll for zoom</p>
+                <p className={css(HomeStyles.tip)}>Click & drag to rotate</p>
+                <p className={css(HomeStyles.tip)}>Scroll for zoom</p>
                 <HomeCanvas />
             </Suspense>
         </div>

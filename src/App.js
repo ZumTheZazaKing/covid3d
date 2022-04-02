@@ -9,7 +9,7 @@ import en from './translations/en.json';
 
 const Home = lazy(() => import('./pages/Home').then(module => ({default:module.Home})))
 const Variants = lazy(() => import('./pages/Variants').then(module => ({default:module.Variants})))
-const Syptoms = lazy(() => import('./pages/Syptoms').then(module => ({default:module.Syptoms})))
+const Symptoms = lazy(() => import('./pages/Symptoms').then(module => ({default:module.Symptoms})))
 const Story = lazy(() => import('./pages/Story').then(module => ({default:module.Story})))
 
 const customHistory = createBrowserHistory({});
@@ -32,7 +32,7 @@ export function App() {
 
               <Route path="/" element={<Home/>} />
               <Route path="/variants" element={<Variants/>} />
-              <Route path="/syptoms" element={<Syptoms/>} />
+              <Route path="/symptoms" element={<Symptoms/>} />
               <Route path="/story" element={<Story/>}/>
 
            </Routes>
