@@ -5,6 +5,10 @@ import { ScrollControls, Scroll } from '@react-three/drei';
 import Corona from '../3dcomponents/StoryComponents/Corona';
 import Flag from '../3dcomponents/StoryComponents/Flag';
 import Star from '../3dcomponents/StoryComponents/Star';
+import Stonks from '../3dcomponents/StoryComponents/Stonks';
+import Fist from '../3dcomponents/StoryComponents/Fist';
+import Vaccine from '../3dcomponents/StoryComponents/Vaccine';
+import Trophy from '../3dcomponents/StoryComponents/Trophy';
 
 export default function StoryCanvas(){
 
@@ -18,8 +22,25 @@ export default function StoryCanvas(){
                 >
                     <Scroll>
                         <ambientLight />
+                        {/**Model for Section 1 */}
                         <Corona/>
+
+                        {/**Model for Section 2 */}
                         <Flag/>
+
+                        {/**Model for Section 3 */}
+                        <Stonks/>
+
+                        {/**Model for Section 4 */}
+                        <Fist/>
+
+                        {/**Model for Section 5 */}
+                        <Vaccine/>
+
+                        {/**Model for Section 6 */}
+                        <pointLight intensity={1} position={[65, 0, 1]} distance={10}/>
+                        <Trophy/>
+
                         {Array(400).fill().map(() => <Star/>)}
                     </Scroll>
                     <Scroll html>
@@ -182,7 +203,6 @@ export default function StoryCanvas(){
                                 how hard they try, the humans will never be able to purge me. In fact,<br/>
                                 I've already integrated successfully with their daily lives. All that's left<br/>
                                 is for them to declare it.
-
                             </p>
                         </div>
 
@@ -201,7 +221,12 @@ export default function StoryCanvas(){
                             <h2>My Conclusion</h2>
                             <br/>
                             <p style={{lineHeight:1.5}}>
-                                Yes
+                                In the end, the humans were able to realize their flaws and gave up on<br/>
+                                trying to wipe me out. Instead, they did something I was waiting for a<br/>
+                                long time. They started recognizing me as an endemic. Finally, our fighting<br/> 
+                                would end and we would live happily together for the rest of our lives.<br/>
+                                Although some countries are still in the process, it will happen slowly<br/>
+                                but surely. Soon enough, I'll be normal as my distant cousin, the Flu.
                             </p>
                         </div>
                         
