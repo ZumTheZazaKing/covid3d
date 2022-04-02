@@ -6,11 +6,12 @@ source: https://sketchfab.com/3d-models/coronavirus-06b0a1d2e64a48a5979b3803d696
 title: Coronavirus
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import React, { useRef, useState } from "react";
+import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function DeltaCorona(props) {
+  const [hovered, setHovered] = useState(false)
   const group = useRef();
   useFrame((state, delta) => {
     group.current.rotation.z += 0.01;
@@ -18,7 +19,24 @@ export default function DeltaCorona(props) {
   })
   const { nodes, materials } = useGLTF("/delta.glb");
   return (
-    <group ref={group} {...props} dispose={null} scale={8}>
+    <group ref={group} {...props} dispose={null} scale={8}
+      onPointerOver={() => setHovered(true)}
+      onPointerOut={() => setHovered(false)}
+    >
+      <Html scaleFactor={10}
+        style={{
+          pointerEvents: "none", 
+          display: hovered ? "block" : "none",
+          color:"white",
+          padding:"10px",
+          backgroundColor:"rgba(0,0,0,0.5)",
+          borderRadius:"5px",
+        }}
+      >
+        <div className="content">
+          Amusement purposes only
+        </div>
+      </Html>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group rotation={[Math.PI / 2, 0, 0]}>

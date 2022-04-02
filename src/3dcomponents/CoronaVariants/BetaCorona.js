@@ -6,11 +6,12 @@ source: https://sketchfab.com/3d-models/lowpoly-coronavirus-sars-cov-2-81acdfb64
 title: Lowpoly Coronavirus (SARS-CoV-2)
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useRef, useState } from "react";
+import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function BetaCorona(props) {
+  const [hovered, setHovered] = useState(false)
   const group = useRef();
   useFrame((state, delta) => {
     group.current.rotation.z += 0.01;
@@ -18,7 +19,24 @@ export default function BetaCorona(props) {
   })
   const { nodes, materials } = useGLTF("/beta.glb");
   return (
-    <group ref={group} {...props} dispose={null} scale={0.5}>
+    <group ref={group} {...props} dispose={null} scale={0.5}
+      onPointerOver={() => setHovered(true)}
+      onPointerOut={() => setHovered(false)}
+    >
+      <Html scaleFactor={10}
+        style={{
+          pointerEvents: "none", 
+          display: hovered ? "block" : "none",
+          color:"white",
+          padding:"10px",
+          backgroundColor:"rgba(0,0,0,0.5)",
+          borderRadius:"5px",
+        }}
+      >
+        <div className="content">
+          Amusement purposes only
+        </div>
+      </Html>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group

@@ -6,11 +6,14 @@ source: https://sketchfab.com/3d-models/coronavirus-covid-19-e503a898c579454ebe1
 title: Coronavirus (COVID-19)
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useRef, useState } from "react";
+import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function AlphaCorona(props) {
+
+  const [hovered, setHovered] = useState(false)
+
   const group = useRef();
   useFrame((state, delta) => {
     group.current.rotation.z += 0.01;
@@ -18,7 +21,24 @@ export default function AlphaCorona(props) {
   })
   const { nodes, materials } = useGLTF("/alpha.glb");
   return (
-    <group ref={group} {...props} dispose={null} scale={0.6}>
+    <group ref={group} {...props} dispose={null} scale={0.6}
+      onPointerOver={() => setHovered(true)}
+      onPointerOut={() => setHovered(false)}
+    >
+      <Html scaleFactor={10}
+        style={{
+          pointerEvents: "none", 
+          display: hovered ? "block" : "none",
+          color:"white",
+          padding:"10px",
+          backgroundColor:"rgba(0,0,0,0.5)",
+          borderRadius:"5px",
+        }}
+      >
+        <div className="content">
+          Amusement purposes only
+        </div>
+      </Html>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={[100, 100, 100]}>

@@ -6,11 +6,12 @@ source: https://sketchfab.com/3d-models/coronavirus-b28f63adc5f04a2aab27e1d7293e
 title: Coronavirus
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useRef, useState } from "react";
+import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function OmicronCorona(props) {
+  const [hovered, setHovered] = useState(false)
   const group = useRef();
   useFrame((state, delta) => {
     group.current.rotation.z += 0.01;
@@ -18,7 +19,24 @@ export default function OmicronCorona(props) {
   })
   const { nodes, materials } = useGLTF("/corona.glb");
   return (
-    <group ref={group} {...props} dispose={null} scale={1.2}>
+    <group ref={group} {...props} dispose={null} scale={1.2}
+      onPointerOver={() => setHovered(true)}
+      onPointerOut={() => setHovered(false)}  
+    >
+      <Html scaleFactor={10}
+        style={{
+          pointerEvents: "none", 
+          display: hovered ? "block" : "none",
+          color:"white",
+          padding:"10px",
+          backgroundColor:"rgba(0,0,0,0.5)",
+          borderRadius:"5px",
+        }}
+      >
+        <div className="content">
+          Amusement purposes only
+        </div>
+      </Html>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
