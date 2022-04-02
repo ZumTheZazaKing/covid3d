@@ -11,6 +11,7 @@ const Home = lazy(() => import('./pages/Home').then(module => ({default:module.H
 const Variants = lazy(() => import('./pages/Variants').then(module => ({default:module.Variants})))
 const Symptoms = lazy(() => import('./pages/Symptoms').then(module => ({default:module.Symptoms})))
 const Story = lazy(() => import('./pages/Story').then(module => ({default:module.Story})))
+const Stats = lazy(() => import('./pages/Stats').then(module => ({default:module.Stats})))
 
 const customHistory = createBrowserHistory({});
 window.appHistory = customHistory;
@@ -34,6 +35,7 @@ export function App() {
               <Route path="/variants" element={<Variants/>} />
               <Route path="/symptoms" element={<Symptoms/>} />
               <Route path="/story" element={<Story/>}/>
+              <Route path="/stats" element={<Stats/>}/>
 
            </Routes>
           </Context.Provider>

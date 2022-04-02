@@ -6,6 +6,7 @@ export const HomeStyles = StyleSheet.create({
     },
     title:{
         textAlign: "center",
+        padding:"10px"
     },
     tip:{
         color:"rgba(0,0,0,0.7)",
