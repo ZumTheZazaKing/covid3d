@@ -13,11 +13,11 @@ import { useFrame } from "@react-three/fiber";
 export default function Checkmark(props) {
   const group = useRef();
   useFrame(({clock}) => {
-    group.current.rotation.y = Math.sin(clock.getElapsedTime())
+    group.current.rotation.y = Math.sin(clock.getElapsedTime()) * 0.2;
   })
   const { nodes, materials } = useGLTF("/checkmark.glb");
   return (
-    <group ref={group} {...props} dispose={null} scale={8} position={[0,-20,0]}>
+    <group ref={group} {...props} dispose={null} scale={0.3} position={[-3,-1,0]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           castShadow

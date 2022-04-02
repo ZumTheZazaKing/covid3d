@@ -27,4 +27,12 @@ export const SymptomsStyles = StyleSheet.create({
         backgroundColor:"#dee0e3",
         border:"1px solid black"
     },
+    list:{
+        lineHeight:1.5,
+        fontSize:"18px",
+        fontWeight:"bold"
+    },
+    mostTitle:{color:"green"},
+    lessTitle:{color:"orange"},
+    seriousTitle:{color:"red"}
 })

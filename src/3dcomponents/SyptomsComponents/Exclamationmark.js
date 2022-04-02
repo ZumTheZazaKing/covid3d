@@ -14,10 +14,13 @@ export default function Exclamationmark(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/exclamationmark.glb");
   useFrame(({clock}) => {
-    group.current.rotation.y = Math.sin(clock.getElapsedTime())
+   
   })
   return (
-    <group ref={group} {...props} dispose={null} scale={0.2}>
+    <group ref={group} {...props} dispose={null} scale={0.01} 
+      position={[2,-15,0]}
+      rotation={[0,65.5,0]}
+    >
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={[100, 100, 100]}>

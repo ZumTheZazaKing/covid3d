@@ -14,10 +14,10 @@ export default function Questionmark(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/questionmark.glb");
   useFrame(({clock}) => {
-    group.current.rotation.y = -Math.sin(clock.getElapsedTime())
+    group.current.rotation.z = -Math.sin(clock.getElapsedTime() * 0.5) * 0.2;
   })
   return (
-    <group ref={group} {...props} dispose={null} scale={200} position={[0,-50,0]}>
+    <group ref={group} {...props} dispose={null} scale={5} position={[3,-9,0]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
