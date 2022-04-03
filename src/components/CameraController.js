@@ -3,9 +3,9 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { useEffect } from "react";
 
 export default function CameraController () {
-    const { camera, gl } = useThree();
-    useEffect(
-       () => {
+   const { camera, gl } = useThree();
+   useEffect(
+      () => {
          const controls = new OrbitControls(camera, gl.domElement);
          controls.minDistance = 40;
          controls.maxDistance = 300;
@@ -13,8 +13,8 @@ export default function CameraController () {
          return () => {
             controls.dispose();
          };
-       },
-       [camera, gl]
-    );
-    return null;
+      },
+      [camera, gl]
+   );
+   return null;
 }

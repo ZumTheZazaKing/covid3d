@@ -1,18 +1,18 @@
-import StatsButton from './StatsButton'
+import TimelineButton from "./TimelineButton";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
-export default function StatsHolder(){
+export default function TimelineHolder(){
 
     const ref = useRef();
 
     useFrame(() => {
-        ref.current.rotation.y += 0.002;
+        ref.current.rotation.y += 0.0008;
     })
 
     return(
         <mesh position={[0,0,0]} ref={ref}>
-            <StatsButton position={[-150,0,0]}/>
+            <TimelineButton scale={15} position={[-250,0,0]} rotation={[0,200,0]}/>
             <sphereGeometry args={[1]}/>
             <meshBasicMaterial color={0xffffff}/>
         </mesh>

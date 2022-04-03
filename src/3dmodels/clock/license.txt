@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wide Clock
+* source:	https://sketchfab.com/3d-models/wide-clock-2ee535f286354b7eb0268e829547b8a3
+* author:	Jetstorm-3D (https://sketchfab.com/Jetstorm_477)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wide Clock" (https://sketchfab.com/3d-models/wide-clock-2ee535f286354b7eb0268e829547b8a3) by Jetstorm-3D (https://sketchfab.com/Jetstorm_477) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
