@@ -6,7 +6,7 @@ source: https://sketchfab.com/3d-models/pb153-notebook-low-79f30cb4af5a40c482e48
 title: PB153 Notebook Low
 */
 
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useSpring, animated, config } from "@react-spring/three";
@@ -32,7 +32,7 @@ export default function StoryButton(props) {
 
   return (
     <animated.group ref={group} {...props} dispose={null}
-        position={[-150,0,0]}
+        position={[200,0,0]}
         rotation={[150,0,0]}
         scale={scale}
         onPointerOver={() => setHovered(true)}

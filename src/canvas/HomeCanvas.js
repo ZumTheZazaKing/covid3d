@@ -6,6 +6,7 @@ import Corona from '../3dcomponents/HomeComponents/Corona';
 import VariantsHolder from '../3dcomponents/HomeComponents/VariantsHolder';
 import SyptomsHolder from '../3dcomponents/HomeComponents/SyptomsHolder';
 import StoryHolder from '../3dcomponents/HomeComponents/StoryHolder';
+import StatsHolder from '../3dcomponents/HomeComponents/StatsHolder'
 import Star from '../3dcomponents/HomeComponents/Star';
 
 export const HomeCanvas = () => {;
@@ -33,6 +34,7 @@ export const HomeCanvas = () => {;
             <VariantsHolder/>
             <SyptomsHolder/>
             <StoryHolder/>
+            <StatsHolder/>
             {Array(400).fill().map(() => <Star/>)}
             <CameraController/>
             <ambientLight intensity={0.5}/>

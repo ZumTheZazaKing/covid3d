@@ -1,7 +1,20 @@
+import { StatsStyles } from "../styles/StatsStyles";
+import { css } from 'aphrodite'
+import StatsCanvas from "../canvas/StatsCanvas";
+
 export const Stats = () => {
+
+    const goBack = () => {
+        window.appHistory.push("/#/")
+        setTimeout((() => {window.location.reload()}), 100)
+    }
+
     return (
-        <div>
-            <h1>Stats</h1>
+        <div className={css(StatsStyles.wrapper)}>
+            <button onClick={goBack} className={css(StatsStyles.backButton)}>Back</button>
+            <h1 className={css(StatsStyles.header)}>Stats for COVID-19 Cases (2020-)</h1>
+            <div className={css(StatsStyles.blocker)}></div>
+            <StatsCanvas/>
         </div>
     )
 }
