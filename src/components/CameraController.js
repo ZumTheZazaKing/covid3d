@@ -8,8 +8,9 @@ export default function CameraController () {
       () => {
          const controls = new OrbitControls(camera, gl.domElement);
          controls.minDistance = 40;
-         controls.maxDistance = 300;
+         controls.maxDistance = 400;
          controls.enableDamping = true;
+         controls.enablePan = false;
          return () => {
             controls.dispose();
          };

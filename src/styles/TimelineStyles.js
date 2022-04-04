@@ -22,5 +22,8 @@ export const TimelineStyles = StyleSheet.create({
         top:0,
         left:0,
         zIndex:-1
+    },
+    leftEvent:{
+        left:"-400px",
     }
 })

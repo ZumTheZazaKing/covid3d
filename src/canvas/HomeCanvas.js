@@ -37,7 +37,7 @@ export const HomeCanvas = () => {;
             <StoryHolder/>
             <StatsHolder/>
             <TimelineHolder/>
-            {Array(400).fill().map(() => <Star/>)}
+            {Array(600).fill().map(() => <Star/>)}
             <CameraController/>
             <ambientLight intensity={0.5}/>
           </Suspense>

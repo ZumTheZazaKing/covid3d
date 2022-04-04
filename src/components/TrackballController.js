@@ -11,7 +11,7 @@ const ALT_KEY = 18;
 const CTRL_KEY = 17;
 const CMD_KEY = 91;
 
-export default function TrackballController(){
+export default function TrackballController(props){
   const controls = useRef();
   const { camera, gl } = useThree();
 
@@ -25,8 +25,9 @@ export default function TrackballController(){
       ref={controls}
       args={[camera, gl.domElement]}
       dynamicDampingFactor={0.1}
-      minDistance={2}
-      maxDistance={10}
+      minDistance={props.min}
+      maxDistance={props.max}
+      enableRotate={false}
       keys={[
         ALT_KEY, // orbit
         CTRL_KEY, // zoom

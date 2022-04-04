@@ -1,0 +1,11 @@
+Model Information:
+* title:	Magnifying glass
+* source:	https://sketchfab.com/3d-models/magnifying-glass-673789ee204a4dcb9881124d9284932e
+* author:	Ted Mebratu (https://sketchfab.com/paraside)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Magnifying glass" (https://sketchfab.com/3d-models/magnifying-glass-673789ee204a4dcb9881124d9284932e) by Ted Mebratu (https://sketchfab.com/paraside) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
