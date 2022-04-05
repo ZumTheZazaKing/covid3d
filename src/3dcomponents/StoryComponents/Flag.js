@@ -7,7 +7,7 @@ title: flag in the wind
 */
 
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Html } from "@react-three/drei";
 
 export default function Flag(props) {
   const group = useRef();
@@ -20,6 +20,40 @@ export default function Flag(props) {
           rotation={[0, Math.PI / 2, 0]}
           scale={[0.4, 0.6, 1]}
         >
+          <Html>
+            {/**Second Section */}
+            <div
+              style={{
+                top:"-200px",
+                left:"-800px",
+                width:"100vw",
+                padding:"20px",
+                position:"absolute",
+              }}
+            >
+              <h2>My Beginning</h2>
+              <br/>
+              <p style={{lineHeight:1.5}}>
+                This reminds me about my first victim. I don't quite remember it very well. <br/>
+                I think it was around 17 November 2019. It was a 55 year old individual <br/>
+                from Hubei province in China. I don't remember much about them, not <br/>
+                even their gender. But those were the good times. It was easy to get <br/>
+                around, from person to person because I was just a new fresh little virus <br/>
+                that no one knew about.
+                <br/><br/>
+                Surprisingly, they noticed my presence around December 2019 at Wuhan, China.<br/>
+                I was worried for a bit but man, humans are stupid. They suspected that I stemmed<br/>
+                from something sold at a wet market in the city. Boy, they were wrong.
+                <br/><br/>
+                After some time, they figured out that I had no relation to the market at all.<br/>
+                Some even started to think I originated in a bat, and I don't really know if<br/>
+                it's wrong or not because I too don't know my origins.
+                <br/><br/>
+                Anyways, it was too late for them. I had already gone out of China as of March 2020<br/>
+                and said "Hello" to the world!
+              </p>
+              </div>
+          </Html>
           <mesh
             castShadow
             receiveShadow

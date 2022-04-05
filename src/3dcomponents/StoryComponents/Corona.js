@@ -7,7 +7,7 @@ title: Coronavirus
 */
 
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function Corona(props) {
@@ -19,6 +19,31 @@ export default function Corona(props) {
   return (
     <group ref={group} {...props} dispose={null} scale={0.02}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
+        {/**First Section */}
+        <Html>
+          <div
+            style={{
+              top:"-150px",
+              left:"-50vw",
+              width:"100vw",
+              textAlign:"center",
+              position:"absolute",
+            }}
+          >
+            <h2>Hello, I'm COVID-19</h2>
+          </div>
+          <div
+            style={{
+              top:"100px",
+              left:"-50vw",
+              width:"100vw",
+              textAlign:"center",
+              position:"absolute",
+            }}
+          >
+            <h2>Let me tell you my story</h2>
+          </div>
+        </Html>
         <mesh
           castShadow
           receiveShadow

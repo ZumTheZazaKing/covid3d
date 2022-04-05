@@ -5,7 +5,6 @@ import { Html } from '@react-three/drei';
 import Corona from '../3dcomponents/HomeComponents/Corona';
 import VariantsHolder from '../3dcomponents/HomeComponents/VariantsHolder';
 import SyptomsHolder from '../3dcomponents/HomeComponents/SyptomsHolder';
-import StoryHolder from '../3dcomponents/HomeComponents/StoryHolder';
 import StatsHolder from '../3dcomponents/HomeComponents/StatsHolder'
 import TimelineHolder from '../3dcomponents/HomeComponents/TimelineHolder';
 import Star from '../3dcomponents/HomeComponents/Star';
@@ -34,7 +33,6 @@ export const HomeCanvas = () => {;
             <Corona/>
             <VariantsHolder/>
             <SyptomsHolder/>
-            <StoryHolder/>
             <StatsHolder/>
             <TimelineHolder/>
             {Array(600).fill().map(() => <Star/>)}
