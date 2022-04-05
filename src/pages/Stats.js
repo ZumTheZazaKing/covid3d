@@ -1,8 +1,13 @@
 import { StatsStyles } from "../styles/StatsStyles";
 import { css } from 'aphrodite'
 import StatsCanvas from "../canvas/StatsCanvas";
+import { useEffect } from "react";
 
 export const Stats = () => {
+
+    useEffect(() => {
+        document.title("Covid3D | Stats")
+    },[])
 
     const goBack = () => {
         window.appHistory.push("/#/")

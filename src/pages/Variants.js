@@ -1,10 +1,14 @@
 import { VariantStyles } from "../styles/VariantStyles";
 import { css } from "aphrodite";
 import { Context } from "../Context";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { VariantCanvas } from "../canvas/VariantCanvas";
 
 export const Variants = () => {
+
+    useEffect(() => {
+        document.title = "Covid3D | Variants"
+    },[])
 
     const { currentLanguage } = useContext(Context);
     const goBack = () => {

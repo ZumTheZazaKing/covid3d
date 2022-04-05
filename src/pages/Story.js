@@ -1,8 +1,13 @@
 import StoryCanvas from "../canvas/StoryCanvas";
 import { StoryStyles } from "../styles/StoryStyles";
 import { css } from "aphrodite";
+import { useEffect } from "react";
 
 export const Story = () => {
+
+    useEffect(() => {
+        document.title = "Covid3D | Story"
+    },[])
 
     const goBack = () => {
         window.appHistory.push("/#/")

@@ -1,8 +1,13 @@
 import { TimelineStyles } from "../styles/TimelineStyles";
 import { css } from "aphrodite";
 import TimelineCanvas from "../canvas/TimelineCanvas";
+import { useEffect } from "react";
 
 export const Timeline = () => {
+
+    useEffect(() => {
+        document.title = "Covid3D | Timeline"
+    },[])
 
     const goBack = () => {
         window.appHistory.push("/#/")

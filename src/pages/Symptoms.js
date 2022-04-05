@@ -1,8 +1,13 @@
 import { SymptomsStyles } from "../styles/SymptomsStyles";
 import { css } from "aphrodite";
 import { SymptomsCanvas } from "../canvas/SymptomsCanvas";
+import { useEffect } from "react";
 
 export const Symptoms = () => {
+
+    useEffect(() => {
+        document.title = "Covid3D | Symptoms"
+    },[])
 
     const goBack = () => {
         window.appHistory.push("/#/")
