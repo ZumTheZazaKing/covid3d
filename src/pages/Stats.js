@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export const Stats = () => {
 
     useEffect(() => {
-        document.title("Covid3D | Stats")
+        document.title = "Covid3D | Stats"
     },[])
 
     const goBack = () => {
