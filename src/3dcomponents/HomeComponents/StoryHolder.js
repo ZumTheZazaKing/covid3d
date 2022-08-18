@@ -6,9 +6,11 @@ export default function StoryHolder(){
 
     const ref = useRef();
 
+    /*
     useFrame(() => {
         ref.current.rotation.y += 0.002;
     })
+    */
 
     return(
         <mesh position={[0,0,0]} ref={ref}>

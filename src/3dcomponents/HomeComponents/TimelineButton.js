@@ -14,6 +14,9 @@ import { useSpring, animated, config } from "@react-spring/three";
 export default function TimelineButton(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/clock.glb");
+  useFrame(() => {
+    group.current.rotation.y += 0.01
+  })
 
   const [hovered, setHovered] = useState(false)
 
@@ -21,7 +24,7 @@ export default function TimelineButton(props) {
     document.body.style.cursor = hovered ? 'pointer' : 'auto'
   }, [hovered])
   const { scale } = useSpring({
-    scale: hovered ? 20 : 15,
+    scale: hovered ? 60 : 50,
     config: config.wobbly
   });
 
@@ -34,6 +37,7 @@ export default function TimelineButton(props) {
           window.appHistory.push("/#/timeline")
           setTimeout((() => {window.location.reload()}), 100)
       }}
+      position={[-100,0,0]}
     >
       <Html scaleFactor={10}
         style={{

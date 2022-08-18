@@ -24,7 +24,7 @@ export default function StatsButton(props) {
     document.body.style.cursor = hovered ? 'pointer' : 'auto'
   }, [hovered])
   const { scale } = useSpring({
-    scale: hovered ? 7 : 5,
+    scale: hovered ? 12 : 10,
     config: config.wobbly
   });
 
