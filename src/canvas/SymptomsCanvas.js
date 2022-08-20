@@ -5,16 +5,20 @@ import { Html } from '@react-three/drei';
 import Checkmark from '../3dcomponents/SyptomsComponents/Checkmark';
 import Questionmark from '../3dcomponents/SyptomsComponents/Questionmark';
 import Exclamationmark from '../3dcomponents/SyptomsComponents/Exclamationmark';
+import Humanbody from '../3dcomponents/SyptomsComponents/Humanbody';
 import Star from '../3dcomponents/HomeComponents/Star';
 import { ScrollControls, Scroll } from '@react-three/drei';
 import { css } from 'aphrodite';
 
 export const SymptomsCanvas = () => {
 
+    const middleH = (window.innerHeight * 3) / 2;
+
     return (
         <div className={css(SymptomsStyles.canvas)}>
-            <Canvas>
+            <Canvas style={{backgroundColor:'#b3b3b3'}}>
                 <ambientLight intensity={0.5} />
+                <directionalLight intensity={1}/>
                 <Suspense fallback={
                     <Html
                         center
@@ -24,13 +28,11 @@ export const SymptomsCanvas = () => {
                     </Html>
                 }>
                     <ScrollControls
-                        pages={3}
+                        pages={2}
                     >
 
                         <Scroll>
-                            <Checkmark />
-                            <Questionmark/>
-                            <Exclamationmark/>
+                            <Humanbody scale={10} position={[3,-16.5,-1]}/>
                             {Array(400).fill().map(() => <Star/>)}
                         </Scroll>
 
@@ -40,67 +42,45 @@ export const SymptomsCanvas = () => {
                             {/**First Section */}
                             <div style={{
                                 position:"absolute",
-                                width:"100vw",
+                                width:"50vw",
                                 height:"90vh",
                                 top:"10vh",
                                 display: 'flex',
-                                alignItems: 'center',
+                                alignItems:"center",
                                 justifyContent: 'center',
                                 flexDirection: 'column',
+                                padding:"100px"
                             }}>
-                                <h1 className={css(SymptomsStyles.mostTitle)}>
-                                    Most Common Symptoms
-                                </h1><br/>
                                 <p className={css(SymptomsStyles.list)}>
-                                    - Fever<br/>
-                                    - Cough<br/>
-                                    - Tiredness<br/>
-                                    - Loss of Taste and Smell
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Fever</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Cough</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Tiredness</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Loss of Taste and Smell</span><br/>
+                                    <span className={css(SymptomsStyles.seriousTitle)}>- Difficulty breathing or shortness of breath</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Red or irritated eyes</span><br/>
+                                    <span className={css(SymptomsStyles.lessTitle)}>- Sore Throat</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Headache</span><br/>
                                 </p>
                             </div>
 
                             {/**Second Section */}
                             <div style={{
                                 position:"absolute",
-                                width:"100vw",
+                                width:"50vw",
                                 height:"100vh",
                                 top:"100vh",
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 flexDirection: 'column',
+                                padding:"100px"
                             }}>
-                                <h1 className={css(SymptomsStyles.lessTitle)}>
-                                    Less Common Symptoms
-                                </h1><br/>
                                 <p className={css(SymptomsStyles.list)}>
-                                    - Sore Throat<br/>
-                                    - Headache<br/>
-                                    - Aches and Pains<br/>
-                                    - Diarrhoea<br/>
-                                    - A rash on skin, or discolouration of fingers or toes<br/>
-                                    - Red or irritated eyes
-                                </p>
-                            </div>
-
-                            {/**Third Section */}
-                            <div style={{
-                                position:"absolute",
-                                width:"100vw",
-                                height:"100vh",
-                                top:"200vh",
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                flexDirection: 'column',
-                            }}>
-                                <h1 className={css(SymptomsStyles.seriousTitle)}>
-                                    Serious Symptoms
-                                </h1><br/>
-                                <p className={css(SymptomsStyles.list)}>
-                                    - Difficulty breathing or shortness of breath<br/>
-                                    - Loss of speech or mobility, or confusion<br/>
-                                    - Chest Pain<br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Aches and Pains</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- Diarrhoea</span><br/>
+                                    <span className={css(SymptomsStyles.mostTitle)}>- A rash on skin, or discolouration of fingers or toes</span><br/>
+                                    <span className={css(SymptomsStyles.seriousTitle)}>- Loss of speech or mobility, or confusion</span><br/>
+                                    <span className={css(SymptomsStyles.seriousTitle)}>- Chest Pain</span><br/>
                                 </p>
                             </div>
                         </Scroll>

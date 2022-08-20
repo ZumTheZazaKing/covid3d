@@ -17,7 +17,15 @@ export const Symptoms = () => {
     return (
         <div className={css(SymptomsStyles.wrapper)}>
             <button className={css(SymptomsStyles.backButton)} onClick={goBack}>Back</button>
-            <h1 className={css(SymptomsStyles.title)}>The Symptoms of COVID-19</h1>
+            <div className={css(SymptomsStyles.title)}>
+                <h1>The Symptoms of COVID-19</h1>
+                <br/>
+                <h3>
+                    <span className={css(SymptomsStyles.mostTitle)}>Most Common</span>,
+                    <span className={css(SymptomsStyles.lessTitle)}>Less Common</span>, 
+                    <span className={css(SymptomsStyles.seriousTitle)}>Serious</span>
+                </h3>
+            </div>
             <SymptomsCanvas/>
         </div>
     )
