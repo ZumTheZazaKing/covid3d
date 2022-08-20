@@ -21,7 +21,7 @@ export const HomeCanvas = () => {;
   
     return (
       <div className={`home canvas`}>
-        <Canvas frameloop='demand' style={{backgroundColor:'#dee0e3'}}>
+        <Canvas style={{backgroundColor:'#dee0e3'}}>
           <Suspense fallback={
             <Html
               center

@@ -6,7 +6,7 @@ import Checkmark from '../3dcomponents/SyptomsComponents/Checkmark';
 import Questionmark from '../3dcomponents/SyptomsComponents/Questionmark';
 import Exclamationmark from '../3dcomponents/SyptomsComponents/Exclamationmark';
 import Humanbody from '../3dcomponents/SyptomsComponents/Humanbody';
-import Star from '../3dcomponents/TimelineComponents/Star';
+import Star from '../3dcomponents/HomeComponents/Star';
 import { ScrollControls, Scroll } from '@react-three/drei';
 import { css } from 'aphrodite';
 
