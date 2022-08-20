@@ -17,7 +17,7 @@ export default function Corona(props) {
     group.current.rotation.y += 0.004;
   })
   return (
-    <group ref={group} {...props} dispose={null} scale={0.5}>
+    <group ref={group} {...props} dispose={null} scale={1}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           castShadow

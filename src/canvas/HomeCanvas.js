@@ -11,9 +11,10 @@ import Star from '../3dcomponents/HomeComponents/Star';
 
 export const HomeCanvas = () => {;
 
+
     const Scene = () => {
       useThree(({camera}) => {
-        camera.position.set(0,0, 120);
+        camera.position.set(0,0, 200);
       })
       return null
     }

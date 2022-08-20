@@ -14,7 +14,7 @@ export default function TimelineHolder(){
 
     return(
         <mesh position={[0,0,0]} rotation={[0,11.5,0]} ref={ref}>
-            <TimelineButton scale={15} position={[-250,0,0]} rotation={[0,200,0]}/>
+            <TimelineButton scale={1} position={[-250,0,20]} rotation={[0,200,0]}/>
             <sphereGeometry args={[1]}/>
             <meshBasicMaterial color={0xffffff}/>
         </mesh>

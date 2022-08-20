@@ -14,7 +14,9 @@ import { useSpring, animated, config } from "@react-spring/three";
 export default function VariantsButton(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/variantsButton.glb");
-
+  useFrame(() => {
+    group.current.rotation.y += 0.01
+  })
   const [hovered, setHovered] = useState(false)
 
   useEffect(() => {
@@ -25,14 +27,12 @@ export default function VariantsButton(props) {
     config: config.wobbly
   });
 
-  useFrame(({clock}) => {
-    group.current.rotation.z = Math.sin(clock.getElapsedTime())
-  })
+  
 
   return (
     <animated.group ref={group} {...props} dispose={null} 
       position={[-100,0,0]} 
-      rotation={[-200,0,0]}
+      rotation={[0,0,0]}
       scale={scale}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
