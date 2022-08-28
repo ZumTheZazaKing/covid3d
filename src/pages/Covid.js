@@ -16,7 +16,7 @@ export const Covid = () => {
     return (
         <div>
             <button onClick={goBack} className={css(TimelineStyles.backButton)}>Back</button>
-            <h1 className={css(TimelineStyles.header)}>Timeline</h1>
+            <h1 className={css(TimelineStyles.header)}>COVID</h1>
         </div>
     )
 }
