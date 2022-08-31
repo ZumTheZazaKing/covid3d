@@ -9,7 +9,7 @@ import StatsHolder from '../3dcomponents/HomeComponents/StatsHolder'
 import TimelineHolder from '../3dcomponents/HomeComponents/TimelineHolder';
 import Star from '../3dcomponents/HomeComponents/Star';
 
-export const HomeCanvas = () => {;
+export const HomeCanvas = () => {
 
 
     const Scene = () => {
@@ -36,7 +36,7 @@ export const HomeCanvas = () => {;
             <SyptomsHolder/>
             <StatsHolder/>
             <TimelineHolder/>
-            {Array(600).fill().map(() => <Star/>)}
+            {Array(250).fill().map(() => <Star/>)}
             <CameraController/>
             <ambientLight intensity={0.5}/>
           </Suspense>

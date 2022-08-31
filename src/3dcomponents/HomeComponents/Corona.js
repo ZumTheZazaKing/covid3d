@@ -34,10 +34,10 @@ export default function Corona(props) {
       scale={scale}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
-      onClick={() => {
+      /*onClick={() => {
         window.appHistory.push("/#/covid")
         setTimeout((() => {window.location.reload()}), 100)
-      }}
+      }}*/
     >
       <Html scaleFactor={10}
         style={{

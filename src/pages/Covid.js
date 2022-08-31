@@ -1,6 +1,7 @@
 import { TimelineStyles } from "../styles/TimelineStyles";
 import { css } from "aphrodite";
 import { useEffect } from "react";
+import CovidCanvas from "../canvas/CovidCanvas";
 
 export const Covid = () => {
 
@@ -17,6 +18,7 @@ export const Covid = () => {
         <div>
             <button onClick={goBack} className={css(TimelineStyles.backButton)}>Back</button>
             <h1 className={css(TimelineStyles.header)}>COVID</h1>
+            <CovidCanvas/>
         </div>
     )
 }
