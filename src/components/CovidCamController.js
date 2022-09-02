@@ -7,8 +7,8 @@ export default function CovidCamController () {
    useEffect(
       () => {
          const controls = new OrbitControls(camera, gl.domElement);
-         controls.minDistance = 20;
-         controls.maxDistance = 200;
+         controls.minDistance = 1;
+         controls.maxDistance = 2;
          controls.enableDamping = true;
          controls.enablePan = false;
          return () => {

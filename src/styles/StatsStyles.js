@@ -4,7 +4,6 @@ export const StatsStyles = StyleSheet.create({
     wrapper:{
         width:"100vw",
         height:"100vh",
-        backgroundColor:"white",
         position:"fixed",
         top:0,
         left:0
@@ -17,11 +16,13 @@ export const StatsStyles = StyleSheet.create({
         outline:"none",
         backgroundColor:"transparent",
         cursor:"pointer",
+        margin:0,
         float:"left"
     },
     header:{
         textAlign:"center",
-        padding:"20px"
+        padding:"20px",
+        margin:0
     },
     canvas:{
         position:"fixed",
@@ -39,6 +40,10 @@ export const StatsStyles = StyleSheet.create({
         zIndex:2,
         backgroundColor:"white",
         width:"305px",
-        height:"40px"
+        height:"40px",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        
     }
 })

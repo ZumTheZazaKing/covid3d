@@ -18,7 +18,7 @@ export const Stats = () => {
         <div className={css(StatsStyles.wrapper)}>
             <button onClick={goBack} className={css(StatsStyles.backButton)}>Back</button>
             <h1 className={css(StatsStyles.header)}>Stats for COVID-19 Cases (2020-)</h1>
-            <div className={css(StatsStyles.blocker)}></div>
+            <div className={css(StatsStyles.blocker)}><b>Last Updated: 20 August 2022</b></div>
             <StatsCanvas/>
         </div>
     )
