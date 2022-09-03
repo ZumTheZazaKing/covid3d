@@ -22,7 +22,7 @@ export default function StatsCanvas(){
               center
               prepend
             >
-              <h1>LOADING...</h1>
+              <div className="wobbling-8"></div>
             </Html>
           }>
             <Scene/>

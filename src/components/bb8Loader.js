@@ -1,8 +1,8 @@
 import { LoadingStyles } from '../styles/LoadingStyles';
-import { css } from 'aphrodite';
+import { css } from 'aphrodite'
 
-export default function Loading () {
+const BB8Loader = () => {
     return (<div className={css(LoadingStyles.container)}>
-        <div className='wobbling-8'></div>
+        <div className='bb-8'></div>
     </div>)
-}
+}; export default BB8Loader;

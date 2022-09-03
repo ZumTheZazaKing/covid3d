@@ -35,7 +35,7 @@ export const VariantCanvas = (props) => {
                     center
                     prepend
                 >
-                    <h2>LOADING...</h2>
+                    <div className='wobbling-8'></div>
                 </Html>
             }>
                 <Scene/>

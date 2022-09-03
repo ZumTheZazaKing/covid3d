@@ -1,8 +1,8 @@
 import { LoadingStyles } from '../styles/LoadingStyles';
-import { css } from 'aphrodite';
+import { css } from 'aphrodite'
 
-export default function Loading () {
+const YodaLoader = () => {
     return (<div className={css(LoadingStyles.container)}>
-        <div className='wobbling-8'></div>
+        <div className='yoda'></div>
     </div>)
-}
+}; export default YodaLoader;

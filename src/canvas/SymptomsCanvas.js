@@ -24,7 +24,7 @@ export const SymptomsCanvas = () => {
                         center
                         prepend
                     >
-                        <h2>LOADING...</h2>
+                       <div className='wobbling-8'></div>
                     </Html>
                 }>
                     <ScrollControls

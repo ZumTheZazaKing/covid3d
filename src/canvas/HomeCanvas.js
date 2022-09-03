@@ -10,6 +10,8 @@ import TimelineHolder from '../3dcomponents/HomeComponents/TimelineHolder';
 import Star from '../3dcomponents/HomeComponents/Star';
 
 export const HomeCanvas = () => {
+  
+  const loaders = ['bb-8','chewi','yoda','dv']
 
     const Scene = () => {
       useThree(({camera}) => {
@@ -26,7 +28,7 @@ export const HomeCanvas = () => {
               center
               prepend
             >
-              <h1>LOADING...</h1>
+              <div className={loaders[Math.floor(Math.random()*loaders.length)]}></div>
             </Html>
           }>
             <Scene/>
