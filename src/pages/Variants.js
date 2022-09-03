@@ -10,7 +10,7 @@ export const Variants = () => {
         document.title = "Covid3D | Variants"
     },[])
 
-    const { currentLanguage } = useContext(Context);
+    const { currentLanguage, mobile } = useContext(Context);
     const goBack = () => {
         window.appHistory.push("/#/")
         setTimeout((() => {window.location.reload()}), 100)
@@ -33,8 +33,9 @@ export const Variants = () => {
             <div className={css(VariantStyles.container)}>
                 <div className={css(VariantStyles.header)}>
                     <button className={css(VariantStyles.backButton)} onClick={goBack}>Back</button>
-                    <h1>{currentLanguage.variants.title}</h1><br/>
+                    {mobile ? <h2>{currentLanguage.variants.title}</h2> : <h1>{currentLanguage.variants.title}</h1>}
                 </div>
+                <br/>
                 <div className={css(VariantStyles.content)}>
                     <button onClick={goToPreviousVariant} className={css(VariantStyles.button)}>Previous</button>
                     <div className={css(VariantStyles.mainContent)}>
@@ -47,7 +48,9 @@ export const Variants = () => {
                             <p><b>Severe Effects:</b> {currentLanguage.variants.content[variantIndex].severe_effects}</p>
                         </div>
                         <div className={css(VariantStyles.contentImage)}>
+                            <button onClick={goToPreviousVariant} className={css(VariantStyles.mobileButton)}>{'<'}</button>
                             <VariantCanvas variantIndex={variantIndex}/>
+                            <button onClick={goToNextVariant} className={css(VariantStyles.mobileButton)}>{'>'}</button>
                         </div>
                     </div>
                     <button onClick={goToNextVariant} className={css(VariantStyles.button)}>Next</button>

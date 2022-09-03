@@ -1,19 +1,21 @@
 import { Canvas, useThree } from '@react-three/fiber';
-import { Suspense } from 'react';
+import { Suspense, useContext } from 'react';
 import { Html } from '@react-three/drei';
 import BetaCorona from '../3dcomponents/CoronaVariants/BetaCorona';
 import AlphaCorona from '../3dcomponents/CoronaVariants/AlphaCorona';
 import DeltaCorona from '../3dcomponents/CoronaVariants/DeltaCorona';
 import GammaCorona from '../3dcomponents/CoronaVariants/GammaCorona';
 import OmicronCorona from '../3dcomponents/CoronaVariants/OmicronCorona';
+import { Context } from '../Context';
 
 export const VariantCanvas = (props) => {
 
     const { variantIndex } = props;
+    const { mobile } = useContext(Context)
 
     const Scene = () => {
         useThree(({camera}) => {
-          camera.position.set(0, 0, 200);
+          mobile ? camera.position.set(0, 0, 150) : camera.position.set(0, 0, 200)
         })
         return null
     }
@@ -27,7 +29,7 @@ export const VariantCanvas = (props) => {
     ]
 
     return (
-        <Canvas style={{backgroundColor:"rgba(0,0,0,0.3)"}}>
+        <Canvas style={{backgroundColor:"rgba(0,0,0,0.3)", flex:4}}>
             <Suspense fallback={
                 <Html
                     center
