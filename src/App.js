@@ -1,8 +1,5 @@
 import { Suspense, lazy, useState, useEffect } from 'react';
-import BB8Loader from './components/bb8Loader';
-import ChewiLoader from './components/chewiLoader';
-import YodaLoader from './components/yodaLoader';
-import DarthLoader from './components/darthLoader';
+import Loading from './components/Loading';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import { Context } from './Context';
@@ -24,7 +21,6 @@ export function App() {
   const [language, setLanguage] = useState('en');
   const [currentLanguage, setCurrentLanguage] = useState(en);
   const [mobile, setMobile] = useState(false);
-  const loaders = [<BB8Loader/>,<ChewiLoader/>,<YodaLoader/>,<DarthLoader/>]
 
   useEffect(()=>{
     if(window.innerWidth < 1000 || window.innerHeight < 600)setMobile(true);
@@ -33,7 +29,7 @@ export function App() {
   return (
     <HashRouter history={customHistory}>
       <div className="App">
-        <Suspense fallback={loaders[Math.floor(Math.random()*loaders.length)]}>
+        <Suspense fallback={<Loading/>}>
           <Context.Provider value={{
             language, setLanguage, 
             currentLanguage, setCurrentLanguage,
