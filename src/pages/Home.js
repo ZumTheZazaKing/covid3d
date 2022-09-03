@@ -15,8 +15,16 @@ export const Home = () => {
                 {mobile ? 
                 <h2 className={css(HomeStyles.title)}>A Close Look At COVID-19</h2> : 
                 <h1 className={css(HomeStyles.title)}>A Close Look At COVID-19</h1>}
-                <p className={css(HomeStyles.tip)}>Click & drag to rotate</p>
-                <p className={css(HomeStyles.tip)}>Scroll for zoom</p>
+               {window.innerWidth < 600 ? 
+                <div>
+                    <p className={css(HomeStyles.tip)}>Touch & drag to rotate</p>
+                    <p className={css(HomeStyles.tip)}>Pinch for zoom</p>
+                </div>
+               : 
+               <div>
+                    <p className={css(HomeStyles.tip)}>Click & drag to rotate</p>
+                    <p className={css(HomeStyles.tip)}>Scroll for zoom</p>
+                </div>}
                 <HomeCanvas />
             </Suspense>
         </div>

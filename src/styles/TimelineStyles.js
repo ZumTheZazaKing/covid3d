@@ -9,7 +9,9 @@ export const TimelineStyles = StyleSheet.create({
         fontWeight:"bold",
         fontSize:"18px",
         cursor:"pointer",
-        float:"left"
+        position:"fixed",
+        top:0,
+        left:0
     },
     header:{
         textAlign:"center",
