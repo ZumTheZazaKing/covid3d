@@ -30,7 +30,7 @@ export const HomeCanvas = () => {
               <h1>LOADING...</h1>
             </Html>
           }>
-             <Scene/>
+            <Scene/>
             <Corona/>
             <VariantsHolder/>
             <SyptomsHolder/>

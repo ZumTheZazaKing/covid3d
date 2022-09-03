@@ -15,6 +15,7 @@ export default function StatsCanvas(){
     }
 
     return (
+      <div className="canvas">
         <Canvas style={{backgroundColor:'#dee0e3'}}>
           <Suspense fallback={
             <Html
@@ -32,5 +33,6 @@ export default function StatsCanvas(){
             <directionalLight position={[20,20,10]} intensity={1}/>
           </Suspense>
         </Canvas>
+      </div>
     )
 }

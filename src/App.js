@@ -1,4 +1,4 @@
-import { Suspense, lazy, useState } from 'react';
+import { Suspense, lazy, useState, useEffect } from 'react';
 import Loading from './components/Loading';
 import MobileWarn from './components/MobileWarn';
 import { HashRouter, Routes, Route } from 'react-router-dom';
@@ -21,6 +21,11 @@ export function App() {
 
   const [language, setLanguage] = useState('en');
   const [currentLanguage, setCurrentLanguage] = useState(en);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(()=>{
+    if(window.innerWidth < 1000 || window.innerHeight < 600)setMobile(true);
+  }, [])
 
   return (
     //window.innerWidth < 1000 || window.innerHeight < 600 ? <MobileWarn /> :
@@ -28,7 +33,9 @@ export function App() {
       <div className="App">
         <Suspense fallback={<Loading/>}>
           <Context.Provider value={{
-            language, setLanguage, currentLanguage, setCurrentLanguage
+            language, setLanguage, 
+            currentLanguage, setCurrentLanguage,
+            mobile
           }}>
             <Routes>
 
