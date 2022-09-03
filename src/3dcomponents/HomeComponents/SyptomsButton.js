@@ -52,7 +52,7 @@ export default function SyptomsButton(props) {
         }}
       >
         <div className="content">
-          Syptoms
+          Symptoms
         </div>
       </Html>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.05}>
